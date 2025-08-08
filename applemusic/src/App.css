@@ -1,0 +1,72 @@
+html,
+body,
+#root {
+    height: 100%;
+}
+body {
+    background: #000;
+    color: #f5f5f7;
+}
+a {
+    color: inherit;
+}
+.text-secondary {
+    color: #a1a1aa !important;
+}
+.border-bottom,
+.border-top {
+    border-color: #2a2a2f !important;
+}
+
+.card {
+    background: transparent;
+}
+.card a {
+    text-decoration: none;
+}
+.card .card-title {
+    font-weight: 600;
+}
+section + section {
+    margin-top: 1.25rem;
+}
+h2.h5 {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+.custom-placeholder::placeholder {
+    color: #c2bcbc;
+    opacity: 1;
+}
+.snap-row {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 0.25rem;
+}
+.snap-item {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .snap-item {
+        flex-basis: 50%;
+    }
+}
+.heroes-row::-webkit-scrollbar {
+    display: none;
+}
+
+.heroes-row {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.heroes-arrows {
+    z-index: 10;
+}
+.p-custom {
+    padding-bottom: 4.2rem !important;
+    background-color: #303030;
+}
